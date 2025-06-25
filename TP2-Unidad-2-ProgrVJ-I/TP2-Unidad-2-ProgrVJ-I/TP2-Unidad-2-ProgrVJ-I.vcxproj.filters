@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Archivos de origen">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Archivos de encabezado">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Archivos de recursos">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Personaje">
+      <UniqueIdentifier>{f268ebf0-7413-4c87-a953-3d9de0d6527c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Utilidades">
+      <UniqueIdentifier>{eac62389-e54c-4638-ac5e-f49ce654bd53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Escenas">
+      <UniqueIdentifier>{09f13221-f411-400e-afee-90617f2f080c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Escenas\Partida">
+      <UniqueIdentifier>{3b53561f-a389-4161-b90b-b12c225e9783}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\Personaje">
+      <UniqueIdentifier>{4b8d8484-3c69-473d-af36-b6a2dd62c41e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\Partida">
+      <UniqueIdentifier>{01bb3de5-dc82-4f84-8c88-3582d6cc162f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\Utilidades">
+      <UniqueIdentifier>{2c8457d4-96b6-4d4f-a130-f8e34492e8e4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Juego.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Personaje.cpp">
+      <Filter>Archivos de origen\Personaje</Filter>
+    </ClCompile>
+    <ClCompile Include="Partida.cpp">
+      <Filter>Archivos de origen\Partida</Filter>
+    </ClCompile>
+    <ClCompile Include="HUD.cpp">
+      <Filter>Archivos de origen\Partida</Filter>
+    </ClCompile>
+    <ClCompile Include="Puerta.cpp">
+      <Filter>Archivos de origen\Partida</Filter>
+    </ClCompile>
+    <ClCompile Include="Plataforma.cpp">
+      <Filter>Archivos de origen\Partida</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemigo.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Afichmation.cpp">
+      <Filter>Archivos de origen\Utilidades</Filter>
+    </ClCompile>
+    <ClCompile Include="Pila.cpp">
+      <Filter>Archivos de origen\Utilidades</Filter>
+    </ClCompile>
+    <ClCompile Include="Cola.cpp">
+      <Filter>Archivos de origen\Utilidades</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Juego.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Personaje.h">
+      <Filter>Archivos de encabezado\Personaje</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio.h">
+      <Filter>Archivos de encabezado\Utilidades</Filter>
+    </ClInclude>
+    <ClInclude Include="Reloj.h">
+      <Filter>Archivos de encabezado\Utilidades</Filter>
+    </ClInclude>
+    <ClInclude Include="Texto.h">
+      <Filter>Archivos de encabezado\Utilidades</Filter>
+    </ClInclude>
+    <ClInclude Include="Afichmation.h">
+      <Filter>Archivos de encabezado\Utilidades</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Archivos de encabezado\Utilidades</Filter>
+    </ClInclude>
+    <ClInclude Include="Escenas.h">
+      <Filter>Archivos de encabezado\Escenas</Filter>
+    </ClInclude>
+    <ClInclude Include="HUD.h">
+      <Filter>Archivos de encabezado\Escenas\Partida</Filter>
+    </ClInclude>
+    <ClInclude Include="Partida.h">
+      <Filter>Archivos de encabezado\Escenas\Partida</Filter>
+    </ClInclude>
+    <ClInclude Include="Objeto.h">
+      <Filter>Archivos de encabezado\Utilidades</Filter>
+    </ClInclude>
+    <ClInclude Include="Puerta.h">
+      <Filter>Archivos de encabezado\Escenas\Partida</Filter>
+    </ClInclude>
+    <ClInclude Include="Plataforma.h">
+      <Filter>Archivos de encabezado\Escenas\Partida</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemigo.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Pila.h">
+      <Filter>Archivos de encabezado\Utilidades</Filter>
+    </ClInclude>
+    <ClInclude Include="Cola.h">
+      <Filter>Archivos de encabezado\Utilidades</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
