@@ -91,6 +91,7 @@ Estos paquetes fueron creados por **Mucho Pixels**, un estudio especializado en 
 ---
 
 ## 👨‍💻 Autor
-JulioCZ
-1° Cuatrimestre – Año 2025
+
+**JulioCZ**  
+1° Cuatrimestre – Año 2025  
 Tecnicatura en Diseño y Programación de Videojuegos
