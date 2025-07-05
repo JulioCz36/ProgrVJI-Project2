@@ -78,9 +78,11 @@ Created by **Mucho Pixels**, a studio specialized in pixel art for games.
 🔗 Official site: [www.muchopixels.com]
 
 ---
+
 ## 📦 Download
 
 [Download on itch.io](https://juliocz36.itch.io/platformer-stacks-queues)
+
 ---
 
 ## 👨‍💻 Autor
