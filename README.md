@@ -1,97 +1,89 @@
-# Trabajo Práctico Nº 2 | Programación de Videojuegos I
+# Practical Work Nº 2 | Video Game Programming I
 
-## 🎮 Actividad
-
-Este trabajo práctico consiste en realizar un juego de **plataformas 2D**, aplicando en código los conceptos de pilas y colas, vistos en la cursada.
+## 🎮 Activity
+This project is about creating a 2D platformer, implementing in code the concepts of stacks and queues learned in class.
 
 ## 🕹️ Gameplay
 
 [![Ver video del gameplay](https://img.youtube.com/vi/468tXj5txqs/0.jpg)](https://youtu.be/468tXj5txqs)
 
 
-## 📝 Consigna
+## 📝 Objective
+Control a character that must climb platforms, avoid enemies, and reach the exit door before the time runs out.
 
-Controlar un personaje que debe escalar plataformas, evitar enemigos y llegar a la puerta de salida antes de que finalice un tiempo límite.
+### Main mechanics:
+- 6 platforms the player can move across.
+- he character can jump up through platforms from below.
+- It’s only possible to go up; you can’t return to previous platforms.
+- The character starts on floor 0 and must reach floor 6, where the exit door is.
+- Each floor has enemies moving sideways, but only one enemy moves at a time.
+- If the player touches an enemy, they fall back to the starting floor (0).
 
-### Mecánicas principales:
-- 6 plataformas por donde el jugador puede desplazarse
-- El personaje puede saltar a través de las plataformas desde abajo hacia arriba.
-- Solo es posible avanzar hacia arriba, no se puede volver a plataformas anteriores.
-- El personaje comienza en el piso 0 y debe llegar al piso 6, donde se encuentra la puerta de salida.
-- En cada piso hay enemigos que se desplazan lateralmente, pero solo uno se mueve a la vez.
-- Si el jugador toca a un enemigo, cae al piso inicial (0).
+## ⏱️ Game over conditions
 
-## ⏱️ Condiciones de fin de juego
+- **WIn:** reach the exit before the time runs out.
+- **Lose:** run out of time (30 seconds) before reaching the exit.
 
-- **Victoria:** el jugador llega a la puerta dentro del tiempo.
-- **Derrota:** se agota el tiempo (30 segundos) antes de llegar.
+## 📦 Implementation of Stacks & Queues
 
-## 📦 Implementación de Pilas y Colas
+### 🔄 Queues (3 floors)
 
-### 🔄 Colas (3 pisos)
+Enemies on three floors use a **queue structure**:
 
-Los enemigos en tres pisos utilizan una **estructura de cola**:
+- The first enemy in the queue starts moving.
+- When it reaches the end of the floor, it **goes off screen** and is reinserted **at the end of the queue**.
+- The cycle repeats with the next enemy waiting.
 
-1. El primer enemigo de la cola comienza a desplazarse.
-2. Al llegar al final del piso, **sale de pantalla** y se vuelve a insertar **al final de la cola**.
-3. Se repite el ciclo para el siguiente enemigo en espera.
+👉 This simulates a **continuous and orderly flow** of enemies.
 
-👉 Esto simula una **entrada ordenada y continua** de enemigos.
+### 🔁 Stacks (3 other floors)
 
-### 🔁 Pilas (3 pisos restantes)
+The other floors use a **stack structure** (Stack A and Stack B):
 
-Los otros pisos implementan una **estructura de pilas** (Pila A y Pila B):
+- The enemy at the **top of Stack A** moves across the floor.
+- When it finishes its path, it’s pushed into **Stack B**.
+- When all enemies are in Stack B, the process **reverses**, moving them back to Stack A.
 
-1. El enemigo en el **tope de la Pila A** se mueve por el piso.
-2. Al finalizar el recorrido, se inserta en la **Pila B**.
-3. Cuando todos los enemigos se encuentran en la Pila B, el proceso se **invierte**, devolviendo cada enemigo a la Pila A.
-
-👉 Esto simula un **flujo cíclico y controlado** de enemigos en el piso.
+👉 This creates a **cyclical and controlled flow** of enemies..
 
 
-### Controles:
-- **A / D**: mover al personaje
-- **Espacio / W**: saltar
-- **Shift + A / Shift + D**: correr
+### Controls
 
-Al finalizar, se muestran **Game Over** o **You Win**.
+- **A / D**: move
+- **Space / W**: jump
+- **Shift + A / Shift + D**: run
 
-## ⚙️ Tecnologías usadas
+At the end, you’ll see **Game Over** or **You Win**.
+
+## ⚙️ Technologies used
 
 - C++
 - SFML
 - Visual Studio
 
-## 🖼️ Créditos y Licencia de Assets
+## 🖼️ Assets & License
 
-Los recursos gráficos utilizados en este proyecto provienen de:
+Graphics used in this project come from:
 
 - **CHARACTER ANIMATION ASSET PACK**
 - **CITY STREET TILESET PACK**
 
-Estos paquetes fueron creados por **Mucho Pixels**, un estudio especializado en pixel art para videojuegos.
-> El paquete **CHARACTER ANIMATION ASSET PACK** es completamente gratuito y se puede usar en proyectos comerciales, con las siguientes restricciones:
+Created by **Mucho Pixels**, a studio specialized in pixel art for games.
 
-❌ No está permitido redistribuir directamente los archivos.
-❌ No se pueden utilizar como parte de un logotipo o marca registrada.
+> The **CHARACTER ANIMATION ASSET PACK** is completely free to use in commercial projects, with the following restrictions:
+
+❌ You can't redistribute the files directly.  
+❌ You can't use them as part of a logo or registered trademark.
+
+🔗 Official site: [www.muchopixels.com]
 
 
-🔗 Sitio oficial: [www.muchopixels.com]
+## 📦 Download
 
----
-
-## ▶️ Cómo ejecutar
-1. Descargar la carpeta **"Instalador"**.
-2. Dentro encontrarás todos los archivos necesarios y un archivo ejecutable:  
-   **`TP2-ProgrVJ-I.exe`**
-3. Ejecutá el `.exe` directamente para jugar.
-
-> ⚠️ No borrar ni mover los archivos que acompañan al ejecutable. El juego depende de ellos para funcionar correctamente.
-
----
+[Download on itch.io](https://juliocz36.itch.io/platformer-stacks-queues)
 
 ## 👨‍💻 Autor
 
-**JulioCZ**  
-1° Cuatrimestre – Año 2025  
+**JulioCZ**
+1° Cuatrimestre – Año 2025
 Tecnicatura en Diseño y Programación de Videojuegos
