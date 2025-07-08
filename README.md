@@ -87,6 +87,4 @@ Created by **Mucho Pixels**, a studio specialized in pixel art for games.
 
 ## 👨‍💻 Autor
 
-**JulioCZ**
-1° Cuatrimestre – Año 2025
-Tecnicatura en Diseño y Programación de Videojuegos
+**JulioCZ** - Technical Degree in Video Game Design and Programming
