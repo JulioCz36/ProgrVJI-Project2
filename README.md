@@ -5,7 +5,7 @@ This project is about creating a 2D platformer, implementing in code the concept
 
 ## 🕹️ Gameplay
 
-[![Ver video del gameplay](https://img.youtube.com/vi/468tXj5txqs/0.jpg)](https://youtu.be/468tXj5txqs)
+[![Ver video del gameplay](https://img.itch.zone/aW1hZ2UvMzY5Nzc1NC8yMjAxMTEwMC5wbmc=/original/9gKcc4.png)](https://youtu.be/468tXj5txqs)
 
 
 ## 📝 Objective
